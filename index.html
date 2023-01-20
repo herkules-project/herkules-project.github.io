@@ -117,7 +117,7 @@ height: auto;
 .Line {
 	margin: 5.160vh 0 0 0;
 	height: 0.310vh;
-	width: 0.310vw;
+	width: 15.625vw;
 	display: inline-block;
 	background-color: black;
 }
@@ -437,7 +437,6 @@ const SecondImage = document.getElementsByClassName("ImageSecond");
 function Sledz(){   
 if(StartImageRect.bottom <= 0)
 {
-console.log(StartImageRect.bottom);
 root.style.setProperty('--Value',`${window.scrollY/(3/2)}px`);
 }
 Object.values(overline).forEach((line) =>{
