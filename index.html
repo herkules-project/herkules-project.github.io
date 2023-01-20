@@ -204,12 +204,12 @@ filter: brightness(70%);
 }
 .Row .Img-Wrapper2:nth-of-type(2):hover
 {
-animation: fadePink 0.4s ease;
+animation: fadePink 0.25s ease;
 animation-fill-mode: forwards;
 }
 .Row .Img-Wrapper2:nth-of-type(1):hover
 {
-animation: fadeBlue 0.4s ease;
+animation: fadeBlue 0.25s ease;
 animation-fill-mode: forwards;
 }
 
@@ -431,6 +431,7 @@ const FirstImage = document.getElementsByClassName("ImageFirst");
 const SecondImage = document.getElementsByClassName("ImageSecond");
 
 function Sledz(){   
+console.log(StartImageRect.bottom);
 if(StartImageRect.bottom >= 0)
 {
 root.style.setProperty('--Value',`${window.scrollY/(3/2)}px`);
