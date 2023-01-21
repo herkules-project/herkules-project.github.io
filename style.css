@@ -1,6 +1,8 @@
 body {
 	margin: 0;
+	box-sizing: border-box;
 	background-color: rgb(255, 255, 255);
+	font-size: 0.938vw;
 }
 
 
@@ -8,78 +10,113 @@ body {
 	--Value: 0px;
 }
 
-.Content {
+header
+{
+width: 100vw;
+max-width: 100%;
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	box-sizing: border-box;
 }
 
-.Menu
+nav
 {
-width: 100%;
-height: 42px;
-display: flex;
-flex-direction: row-reverse;
-align-items: center;
-background-color: black;
+	width: 100vw;
+	max-width:100%;
+	height: 4.334vh;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	background-color: black;
 }
-.Menu a
+nav a
 {
-text-decoration: none;
-color:#b3b0ca;;
-padding: 0 30px;
+	text-decoration: none;
+	color:#b3b0ca;
+	padding: 0 1.563vw;
 }
 
 .Start
 {
-margin-right: 250px;
-font-size: 125%;
+	margin-right: 13.021vw;
+	font-size: 1.172vw;
 }
 
-.menu a:hover
+nav a:hover
 {
-color: #b3b0ca;
+	color: #b3b0ca;
 }	
+
 .hidden
 {
-display: none;
+	display: none;
 }
+
 .Img-Wrapper {
+	margin: 0;
 	background-color: gba(0, 0, 0, 0.5);
 	overflow: hidden;
-	height: 623px;
-	width: 100%;
+	height: 64.293vh;
+	width: 100vw;
+	max-width:100%;
 }
 
 .Start-Img {
 	filter: brightness(60%);
 	transform: translateY(var(--Value));
-	width: 100%;
-	margin-top: -275px;
+	width: 100vw;
+	max-width:100%;
+	margin-top: -28.380vh;
 }
 
 .Img-Text {
 	position: absolute;
-	font-size: 340%;
-	width: 25em;
-	top: 200px;
+	font-size: 3.188vw;
+	top: 20.640vh;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 	font-family: 'Roboto Mono', sans-serif;
 }
 
-.Container {
-	margin: 150px 0 0 0;
+.MainContainer {
+	padding: 0;
+	margin: 20.640vh 0 0 0;
 	display: flex;
 	flex-direction: row;
 }
 
+.MainContainer > section{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.MainContainer > section:nth-of-type(1)
+{
+margin: 0 -2.84635416vw 0 0;
+}
+
+.MainContainer > section:nth-of-type(2)
+{
+	margin: -3.71517vh -4.4661458vw 0 -4.4661458vw;
+}
+
+.MainContainer > section:nth-of-type(3)
+{
+margin: -3.71517vh 0 0 -3.4809895vw;
+}
+
 .Circle {
 	padding: 0;
-	height: 100px;
-	width: 100px;
+	height: 10.320vh;
+	width: 5.208vw;
 	background-color: black;
 	border-radius: 60%;
 	display: flex;
@@ -90,50 +127,50 @@ display: none;
 
 .C2 img
 {
-width: 80%;
-height: auto;
+	width: 80%;
+	height: auto;
 }
 .C3 img
 {
-width: 100%;
-height: auto;
+	width: 100%;
+	height: auto;
 }
 
 
 .Line {
-	margin: 50px 0 0 0;
-	height: 3px;
-	width: 300px;
+	margin: 5.160vh 0 0 0;
+	height: 0.310vh;
+	width: 15.625vw;
 	display: inline-block;
 	background-color: black;
 }
 
 .Dumbell {
-	border-radius: 35px;
+	border-radius: 1.823vw;
 	background-color: white;
 	display: inline-block;
 }
 
 .D1 {
-	height: 20px;
-	width: 7px;
+	height: 2.063vh;
+	width: 0.365vw;
 }
 
 .D2 {
-	height: 35px;
-	width: 9px;
+	height: 3.612vh;
+	width: 0.469vw;
 }
 
 .D3 {
-	height: 5px;
-	width: 27px;
+	height: 0.516vh;
+	width: 1.406vw;
 	border-radius: 0px;
 }
 
 .OverLine {
-	margin: 100px 0 0 0;
-	height: 10px;
-	width: 220px;
+	margin: 10.320vh 0 0 0;
+	height: 1.032vh;
+	width: 11.458vw;
 	background-color: black;
 	transform: translateX(-500%);
 }
@@ -144,123 +181,105 @@ height: auto;
 }
 
 @keyframes MoveLine {
-from
-{
-transform: translateX(-400%);
-opacity:0;
-}
-to
-{
-transform: translateX(0%);
-opacity:;
-}
+	from
+	{
+		transform: translateX(-400%);
+		opacity:0;
+	}
+	to
+	{
+		transform: translateX(0%);
+		opacity:;
+	}
 }
 
 .Text {
-font-size: 250%;
+	font-size: 2.344vw;
 }
 
 
 
 .AText {
-text-align: center;
+	text-align: center;
 }
 
 .Text-Container {
-display: flex;
-flex-direction: row;
-margin: 30px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	margin: 3.096vh 0 0 0;
 }
+
 .Offer-Container{
-display: flex;
-flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .Img-Wrapper2 > Img
 {
-padding: 0px;
-width: 100%;
-height: 100%;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
 }
 
 .Img-Wrapper2
 {
-margin: 100px 200px;
-object-fit:cover;
-width:13.542vw;
-height:41.796vh;
+	margin: 10.320vh 10.417vw;
+	object-fit:cover;
+	width:13.542vw;
+	height:auto;
 }
+
 .Row .Img-Wrapper2 img:nth-of-type(1)
 {
-filter: brightness(70%);
+	filter: brightness(70%);
 }
+
 .Row .Img-Wrapper2:nth-of-type(2):hover
 {
-animation: fadePink 0.4s ease;
-animation-fill-mode: forwards;
+	animation: fadePink 0.25s ease;
+	animation-fill-mode: forwards;
 }
+
 .Row .Img-Wrapper2:nth-of-type(1):hover
 {
-animation: fadeBlue 0.4s ease;
-animation-fill-mode: forwards;
+	animation: fadeBlue 0.25s ease;
+	animation-fill-mode: forwards;
 }
 
 @keyframes fadePink
 {
-0%{
-}
-100%
-{
-box-shadow: 8px 4px 10px 0px rgba(184, 0, 237, 1);
-}
+	from{
+	}
+	to
+	{
+		box-shadow: 0.417vw 0.413vh 10px 0px rgba(184, 0, 237, 1);
+	}
 }
 
 @keyframes fadeBlue
 {
-from{
+	from{
 
-}
-to
-{
-box-shadow: 8px 4px 10px 0px rgba(0, 77, 235, 1);
-}
+	}
+	to
+	{
+		box-shadow: 0.417vw 0.413vh 10px 0px rgba(0, 77, 235, 1);
+	}
 }
 
 .Offer-Container .Row
 {
-display: flex;
-flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 
 .show
 {
-display: block;
+	display: block;
 }
 
-.Img-Wrapper3 > img {
-	transition: transform .4s;
-}
-
-.Img-Wrapper3 > img:hover {
-	transform: scale(1.2);
-	cursor: pointer;
-}
-
-.Img-Wrapper3 {
-	margin: 5px;
-	height: 49.536vh;
-	width: 15.208vw;
-	overflow: hidden;
-	vertical-align: top;
-}
-
-.Gallery-Container {
-	display: flex;
-	flex-direction: row;
-}
-
-.Image-Bg {
+	.Image-Bg{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -270,15 +289,47 @@ display: block;
 	height: 111.868vh;
 }
 
-.ContainerChd {
-	margin: 0;
+.Gallery-Container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
+
+.Gallery-Container:nth-of-type(1) > .Img-Wrapper3:nth-of-type(3) > img
+{
+	margin-left:-11.094vw;
+}
+
+.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(2) > img
+{
+	margin-left: -11.198vw;
+}
+
+.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(3) > img
+{
+	margin-left: -9.115vw;
+}
+
+.Img-Wrapper3 > img {
+transition: transform .4s;
+}
+
+.Img-Wrapper3 > img:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.Img-Wrapper3 {
+	margin: 0.516vw 0.260vw;
+	height: 49.535vh;
+	width: 15.208vw;
+	overflow:hidden;
+}
+
+
 .Heading
 {
-margin: 0 0 100px 0;
-font-size: 350%;
+	margin: 0 0 10.320vh 0;
+	font-size: 3.281vw;
 }
