@@ -9,8 +9,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.cdnfonts.com/css/josefin-sans" rel="stylesheet">
 <style>
-@media (orientation: landscape) {
-
 	body {
 		margin: 0;
 		box-sizing: border-box;
@@ -309,6 +307,21 @@
 		align-items: center;
 	}
 
+	.Gallery-Container:nth-of-type(1) > .Img-Wrapper3:nth-of-type(3) > img
+	{
+		margin-left:-11.094vw;
+	}
+
+	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(2) > img
+	{
+		margin-left: -11.198vw;
+	}
+
+	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(3) > img
+	{
+		margin-left: -9.115vw;
+	}
+
 	.Img-Wrapper3 > img {
 	transition: transform .4s;
 	}
@@ -325,359 +338,12 @@
 		overflow:hidden;
 	}
 
-	.Gallery-Container:nth-of-type(1) > .Img-Wrapper3:nth-of-type(3) > img
-	{
-		margin-left:-11.094vw;
-	}
-
-	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(3) > img
-	{
-		margin-left: -11.198vw;
-	}
-
-	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(4) > img
-	{
-		margin-left: -9.115vw;
-	}
 
 	.Heading
 	{
 		margin: 0 0 10.320vh 0;
 		font-size: 3.281vw;
 	}
-}
-@media (orientation: portrait) {
-	body {
-		margin: 0;
-		box-sizing: border-box;
-		background-color: rgb(255, 255, 255);
-		font-size: 0.938vh;
-	}
-
-
-	:root {
-		--Value: 0px;
-	}
-
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		box-sizing: border-box;
-	}
-	
-	header
-	{
-		width: 100vh;
-		max-width: 100%;
-	}
-	
-	nav
-	{
-		width: 100vh;
-		max-width:100%;
-		height: 4.334vw;
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		background-color: black;
-	}
-	nav a
-	{
-		text-decoration: none;
-		color:#b3b0ca;
-		padding: 0 1.563vh;
-	}
-
-	.Start
-	{
-		margin-right: 13.021vh;
-		font-size: 1.172vh;
-	}
-
-	nav a:hover
-	{
-		color: #b3b0ca;
-	}	
-	.hidden
-	{
-		display: none;
-	}
-	.Img-Wrapper {
-		margin: 0;
-		background-color: gba(0, 0, 0, 0.5);
-		overflow: hidden;
-		height: 64.293vw;
-		width: 100vh;
-		max-width:100%;
-	}
-
-	.Start-Img {
-		filter: brightness(60%);
-		transform: translateY(var(--Value));
-		width: 100vw;
-		max-width:100%;
-		margin-top: -28.380vw;
-	}
-
-	.Img-Text {
-		position: absolute;
-		font-size: 3.188vh;
-		top: 20.640vw;
-		color: white;
-		font-weight: bold;
-		text-align: center;
-		font-family: 'Roboto Mono', sans-serif;
-	}
-
-	.MainContainer {
-		margin: 20.640vw 0 0 0;
-		padding: 0;
-		display: flex;
-		flex-direction: row;
-	}
-
-	.MainContainer > section{
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.MainContainer > section:nth-of-type(1)
-	{
-		margin: 0 -2.84635416vh 0 0;
-	}
-
-	.MainContainer > section:nth-of-type(2)
-	{
-		margin: -3.71517vw -4.4661458vh 0 -4.4661458vh;
-	}
-
-	.MainContainer > section:nth-of-type(3)
-	{
-	margin: -3.71517vw 0 0 -3.4809895vh;
-	}
-
-	.Circle {
-		padding: 0;
-		height: 10.320vw;
-		width: 5.208vw;
-		background-color: black;
-		border-radius: 60%;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.C2 img
-	{
-		width: 80%;
-		height: auto;
-	}
-	.C3 img
-	{
-		width: 100%;
-		height: auto;
-	}
-
-
-	.Line {
-		margin: 5.160vw 0 0 0;
-		height: 0.310vw;
-		width: 15.625vh;
-		display: inline-block;
-		background-color: black;
-	}
-
-	.Dumbell {
-		border-radius: 1.823vh;
-		background-color: white;
-		display: inline-block;
-	}
-
-	.D1 {
-		height: 2.063vw;
-		width: 0.365vh;
-	}
-
-	.D2 {
-		height: 3.612vw;
-		width: 0.469vh;
-	}
-
-	.D3 {
-		height: 0.516vw;
-		width: 1.406vh;
-		border-radius: 0px;
-	}
-
-	.OverLine {
-		margin: 10.320vw 0 0 0;
-		height: 1.032vw;
-		width: 11.458vh;
-		background-color: black;
-		transform: translateX(-500%);
-	}
-
-	.DisplayOverLine {
-		animation: MoveLine 1.5s ease;
-		transform: translateX(0%);
-	}
-
-	@keyframes MoveLine {
-		from
-		{
-			transform: translateX(-400%);
-			opacity:0;
-		}
-		to
-		{
-			transform: translateX(0%);
-			opacity:1;
-		}
-	}
-
-	.Text {
-		font-size: 2.344vh;
-	}
-
-	.AText {
-		text-align: center;
-	}
-
-	.Text-Container {
-		display: flex;
-		flex-direction: row;
-		margin: 3.096vw 0 0 0;
-	}
-
-	.Offer-Container{
-		display: flex;
-		flex-direction: column;
-	}
-
-	.Img-Wrapper2 > Img
-	{
-		padding: 0px;
-		width: 100%;
-		height: 100%;
-	}
-
-	.Img-Wrapper2
-	{
-		margin: 10.320vw 10.417vh;
-		object-fit:cover;
-		width:13.542vh;
-		height:auto;
-	}
-
-	.Row .Img-Wrapper2 img:nth-of-type(1)
-	{
-		filter: brightness(70%);
-	}
-
-	.Row .Img-Wrapper2:nth-of-type(2):hover
-	{
-		animation: fadePink 0.25s ease;
-		animation-fill-mode: forwards;
-	}
-	.Row .Img-Wrapper2:nth-of-type(1):hover
-	{
-		animation: fadeBlue 0.25s ease;
-		animation-fill-mode: forwards;
-	}
-
-	@keyframes fadePink
-	{
-		from{
-		}
-		to
-		{
-			box-shadow: 0.417vh 0.413vw 10px 0px rgba(184, 0, 237, 1);
-		}
-	}
-
-	@keyframes fadeBlue
-	{
-		from{
-		}
-		to
-		{
-			box-shadow: 0.417vh 0.413vw 10px 0px rgba(0, 77, 235, 1);
-		}
-	}
-
-	.Offer-Container .Row
-	{
-		display: flex;
-		flex-direction: row;
-	}
-
-
-	.show
-	{
-		display: block;
-	}
-
-	.Image-Bg {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: black;
-		width: 82.135vh;
-		height: 111.868vw;
-	}
-
-	.Gallery-Container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.Gallery-Container:nth-of-type(1) > .Img-Wrapper3:nth-of-type(3) > img
-	{
-		margin-left:-11.094vh;
-	}
-
-	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(3) > img
-	{
-		margin-left: -11.198vh;
-	}
-
-	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(4) > img
-	{
-		margin-left: -9.115vh;
-	}
-
-	.Img-Wrapper3 > img {
-		transition: transform .4s;
-	}
-
-	.Img-Wrapper3 > img:hover {
-		transform: scale(1.2);
-		cursor: pointer;
-	}
-
-	.Img-Wrapper3 {
-		margin: 0.516vh 0.260vh;
-		height: 49.535vw;
-		width: 15.208vh;
-		overflow:hidden;
-	}
-
-
-	.Heading
-	{
-		margin: 0 0 10.320vw 0;
-		font-size: 3.281vh;
-	}	
-
-}
 </style>
 </head>
 <body onscroll = "Sledz()">
