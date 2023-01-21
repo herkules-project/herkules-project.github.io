@@ -10,6 +10,7 @@
 <link href="https://fonts.cdnfonts.com/css/josefin-sans" rel="stylesheet">
 <style>
 @media (orientation: landscape) {
+
 	body {
 		margin: 0;
 		box-sizing: border-box;
@@ -22,45 +23,54 @@
 		--Value: 0px;
 	}
 
-	.Content {
+	header
+	{
+	width: 100vw;
+	max-width: 100%;
+	}
+
+	main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		box-sizing: border-box;
 	}
 
-	.Menu
+	nav
 	{
-	width: 100vw;
-	max-width:100%;
-	height: 4.334vh;
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	background-color: black;
+		width: 100vw;
+		max-width:100%;
+		height: 4.334vh;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		background-color: black;
 	}
-	.Menu a
+	nav a
 	{
-	text-decoration: none;
-	color:#b3b0ca;
-	padding: 0 1.563vw;
+		text-decoration: none;
+		color:#b3b0ca;
+		padding: 0 1.563vw;
 	}
 
 	.Start
 	{
-	margin-right: 13.021vw;
-	font-size: 1.172vw;
+		margin-right: 13.021vw;
+		font-size: 1.172vw;
 	}
 
-	.menu a:hover
+	nav a:hover
 	{
-	color: #b3b0ca;
+		color: #b3b0ca;
 	}	
+
 	.hidden
 	{
-	display: none;
+		display: none;
 	}
+
 	.Img-Wrapper {
+		margin: 0;
 		background-color: gba(0, 0, 0, 0.5);
 		overflow: hidden;
 		height: 64.293vh;
@@ -86,10 +96,34 @@
 		font-family: 'Roboto Mono', sans-serif;
 	}
 
-	.Container {
+	.MainContainer {
+		padding: 0;
 		margin: 20.640vh 0 0 0;
 		display: flex;
 		flex-direction: row;
+	}
+
+	.MainContainer > section{
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.MainContainer > section:nth-of-type(1)
+	{
+	margin: 0 -2.84635416vw 0 0;
+	}
+
+	.MainContainer > section:nth-of-type(2)
+	{
+		margin: -3.71517vh -4.4661458vw 0 -4.4661458vw;
+	}
+
+	.MainContainer > section:nth-of-type(3)
+	{
+	margin: -3.71517vh 0 0 -3.4809895vw;
 	}
 
 	.Circle {
@@ -106,13 +140,13 @@
 
 	.C2 img
 	{
-	width: 80%;
-	height: auto;
+		width: 80%;
+		height: auto;
 	}
 	.C3 img
 	{
-	width: 100%;
-	height: auto;
+		width: 100%;
+		height: auto;
 	}
 
 
@@ -160,102 +194,123 @@
 	}
 
 	@keyframes MoveLine {
-	from
-	{
-	transform: translateX(-400%);
-	opacity:0;
-	}
-	to
-	{
-	transform: translateX(0%);
-	opacity:;
-	}
+		from
+		{
+			transform: translateX(-400%);
+			opacity:0;
+		}
+		to
+		{
+			transform: translateX(0%);
+			opacity:;
+		}
 	}
 
 	.Text {
-	font-size: 2.344vw;
+		font-size: 2.344vw;
 	}
 
 
 
 	.AText {
-	text-align: center;
+		text-align: center;
 	}
 
 	.Text-Container {
-	display: flex;
-	flex-direction: row;
-	margin: 3.096vh 0 0 0;
+		display: flex;
+		flex-direction: row;
+		margin: 3.096vh 0 0 0;
 	}
+
 	.Offer-Container{
-	display: flex;
-	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.Img-Wrapper2 > Img
 	{
-	padding: 0px;
-	width: 100%;
-	height: 100%;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
 	}
 
 	.Img-Wrapper2
 	{
-	margin: 10.320vh 10.417vw;
-	object-fit:cover;
-	width:13.542vw;
-	height:auto;
+		margin: 10.320vh 10.417vw;
+		object-fit:cover;
+		width:13.542vw;
+		height:auto;
 	}
+
 	.Row .Img-Wrapper2 img:nth-of-type(1)
 	{
-	filter: brightness(70%);
+		filter: brightness(70%);
 	}
+
 	.Row .Img-Wrapper2:nth-of-type(2):hover
 	{
-	animation: fadePink 0.25s ease;
-	animation-fill-mode: forwards;
+		animation: fadePink 0.25s ease;
+		animation-fill-mode: forwards;
 	}
+
 	.Row .Img-Wrapper2:nth-of-type(1):hover
 	{
-	animation: fadeBlue 0.25s ease;
-	animation-fill-mode: forwards;
+		animation: fadeBlue 0.25s ease;
+		animation-fill-mode: forwards;
 	}
 
 	@keyframes fadePink
 	{
-	0%{
-	}
-	100%
-	{
-	box-shadow: 0.417vw 0.413vh 10px 0px rgba(184, 0, 237, 1);
-	}
+		from{
+		}
+		to
+		{
+			box-shadow: 0.417vw 0.413vh 10px 0px rgba(184, 0, 237, 1);
+		}
 	}
 
 	@keyframes fadeBlue
 	{
-	from{
+		from{
 
-	}
-	to
-	{
-	box-shadow: 0.417vw 0.413vh 10px 0px rgba(0, 77, 235, 1);
-	}
+		}
+		to
+		{
+			box-shadow: 0.417vw 0.413vh 10px 0px rgba(0, 77, 235, 1);
+		}
 	}
 
 	.Offer-Container .Row
 	{
-	display: flex;
-	flex-direction: row;
+		display: flex;
+		flex-direction: row;
 	}
 
 
 	.show
 	{
-	display: block;
+		display: block;
+	}
+
+		.Image-Bg{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: black;
+		width: 82.135vw;
+		height: 111.868vh;
+	}
+
+	.Gallery-Container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.Img-Wrapper3 > img {
-		transition: transform .4s;
+	transition: transform .4s;
 	}
 
 	.Img-Wrapper3 > img:hover {
@@ -269,38 +324,26 @@
 		width: 15.208vw;
 		overflow:hidden;
 	}
-	.Gallery-Container:nth-of-type(1)  Img-Wrapper3:nth-of-type(3)
+
+	.Gallery-Container:nth-of-type(1) > .Img-Wrapper3:nth-of-type(3) > img
 	{
-	margin-left:-11.094vw;
+		margin-left:-11.094vw;
 	}
 
-	.Gallery-Container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(3) > img
+	{
+		margin-left: -11.198vw;
 	}
 
-	.Image-Bg {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: black;
-		width: 82.135vw;
-		height: 111.868vh;
+	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(4) > img
+	{
+		margin-left: -9.115vw;
 	}
 
-	.ContainerChd {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
 	.Heading
 	{
-	margin: 0 0 10.320vh 0;
-	font-size: 3.281vw;
+		margin: 0 0 10.320vh 0;
+		font-size: 3.281vw;
 	}
 }
 @media (orientation: portrait) {
@@ -316,45 +359,46 @@
 		--Value: 0px;
 	}
 
-	.Content {
+	main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		box-sizing: border-box;
 	}
 
-	.Menu
+	nav
 	{
-	width: 100vh;
-	max-width:100%;
-	height: 4.334vw;
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	background-color: black;
+		width: 100vh;
+		max-width:100%;
+		height: 4.334vw;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		background-color: black;
 	}
-	.Menu a
+	nav a
 	{
-	text-decoration: none;
-	color:#b3b0ca;
-	padding: 0 1.563vh;
+		text-decoration: none;
+		color:#b3b0ca;
+		padding: 0 1.563vh;
 	}
 
 	.Start
 	{
-	margin-right: 13.021vh;
-	font-size: 1.172vh;
+		margin-right: 13.021vh;
+		font-size: 1.172vh;
 	}
 
-	.menu a:hover
+	nav a:hover
 	{
-	color: #b3b0ca;
+		color: #b3b0ca;
 	}	
 	.hidden
 	{
-	display: none;
+		display: none;
 	}
 	.Img-Wrapper {
+		margin: 0;
 		background-color: gba(0, 0, 0, 0.5);
 		overflow: hidden;
 		height: 64.293vw;
@@ -380,10 +424,34 @@
 		font-family: 'Roboto Mono', sans-serif;
 	}
 
-	.Container {
+	.MainContainer {
 		margin: 20.640vw 0 0 0;
+		padding: 0;
 		display: flex;
 		flex-direction: row;
+	}
+
+	.MainContainer > section{
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.MainContainer > section:nth-of-type(1)
+	{
+		margin: 0 -2.84635416vh 0 0;
+	}
+
+	.MainContainer > section:nth-of-type(2)
+	{
+		margin: -3.71517vw -4.4661458vh 0 -4.4661458vh;
+	}
+
+	.MainContainer > section:nth-of-type(3)
+	{
+	margin: -3.71517vw 0 0 -3.4809895vh;
 	}
 
 	.Circle {
@@ -400,13 +468,13 @@
 
 	.C2 img
 	{
-	width: 80%;
-	height: auto;
+		width: 80%;
+		height: auto;
 	}
 	.C3 img
 	{
-	width: 100%;
-	height: auto;
+		width: 100%;
+		height: auto;
 	}
 
 
@@ -454,98 +522,130 @@
 	}
 
 	@keyframes MoveLine {
-	from
-	{
-	transform: translateX(-400%);
-	opacity:0;
-	}
-	to
-	{
-	transform: translateX(0%);
-	opacity:;
-	}
+		from
+		{
+			transform: translateX(-400%);
+			opacity:0;
+		}
+		to
+		{
+			transform: translateX(0%);
+			opacity:1;
+		}
 	}
 
 	.Text {
-	font-size: 2.344vh;
+		font-size: 2.344vh;
 	}
 
-
-
 	.AText {
-	text-align: center;
+		text-align: center;
 	}
 
 	.Text-Container {
-	display: flex;
-	flex-direction: row;
-	margin: 3.096vw 0 0 0;
+		display: flex;
+		flex-direction: row;
+		margin: 3.096vw 0 0 0;
 	}
+
 	.Offer-Container{
-	display: flex;
-	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.Img-Wrapper2 > Img
 	{
-	padding: 0px;
-	width: 100%;
-	height: 100%;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
 	}
 
 	.Img-Wrapper2
 	{
-	margin: 10.320vw 10.417vh;
-	object-fit:cover;
-	width:13.542vh;
-	height:auto;
+		margin: 10.320vw 10.417vh;
+		object-fit:cover;
+		width:13.542vh;
+		height:auto;
 	}
+
 	.Row .Img-Wrapper2 img:nth-of-type(1)
 	{
-	filter: brightness(70%);
+		filter: brightness(70%);
 	}
+
 	.Row .Img-Wrapper2:nth-of-type(2):hover
 	{
-	animation: fadePink 0.25s ease;
-	animation-fill-mode: forwards;
+		animation: fadePink 0.25s ease;
+		animation-fill-mode: forwards;
 	}
 	.Row .Img-Wrapper2:nth-of-type(1):hover
 	{
-	animation: fadeBlue 0.25s ease;
-	animation-fill-mode: forwards;
+		animation: fadeBlue 0.25s ease;
+		animation-fill-mode: forwards;
 	}
 
 	@keyframes fadePink
 	{
-	0%{
-	}
-	100%
-	{
-	box-shadow: 0.417vh 0.413vw 10px 0px rgba(184, 0, 237, 1);
-	}
+		from{
+		}
+		to
+		{
+			box-shadow: 0.417vh 0.413vw 10px 0px rgba(184, 0, 237, 1);
+		}
 	}
 
 	@keyframes fadeBlue
 	{
-	from{
-
-	}
-	to
-	{
-	box-shadow: 0.417vh 0.413vw 10px 0px rgba(0, 77, 235, 1);
-	}
+		from{
+		}
+		to
+		{
+			box-shadow: 0.417vh 0.413vw 10px 0px rgba(0, 77, 235, 1);
+		}
 	}
 
 	.Offer-Container .Row
 	{
-	display: flex;
-	flex-direction: row;
+		display: flex;
+		flex-direction: row;
 	}
 
 
 	.show
 	{
-	display: block;
+		display: block;
+	}
+
+	.Image-Bg {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: black;
+		width: 82.135vh;
+		height: 111.868vw;
+	}
+
+	.Gallery-Container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.Gallery-Container:nth-of-type(1) > .Img-Wrapper3:nth-of-type(3) > img
+	{
+		margin-left:-11.094vh;
+	}
+
+	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(3) > img
+	{
+		margin-left: -11.198vh;
+	}
+
+	.Gallery-Container:nth-of-type(2) > .Img-Wrapper3:nth-of-type(4) > img
+	{
+		margin-left: -9.115vh;
 	}
 
 	.Img-Wrapper3 > img {
@@ -564,33 +664,11 @@
 		overflow:hidden;
 	}
 
-	.Gallery-Container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
 
-	.Image-Bg {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: black;
-		width: 82.135vh;
-		height: 111.868vw;
-	}
-
-	.ContainerChd {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
 	.Heading
 	{
-	margin: 0 0 10.320vw 0;
-	font-size: 3.281vh;
+		margin: 0 0 10.320vw 0;
+		font-size: 3.281vh;
 	}	
 
 }
@@ -603,23 +681,23 @@
 		<a href = "" class = "First">Start</a>
 		<a href = "" class = "Second">Bmi</a>
 		<a href = "" class = "Third">Plan Treningowy</a> -->
-
-<div class = "Menu">
+<header>
+<nav>
 <a href = "" class = "Start">Start</a>
 <a href = "">Plan Treningowy</a>
 <a href = "">Licznik Kcal</a>
 <a href = "">Przepisy żywieniowe</a>
 <a href = "">Diety</a>
 <a href = "">BMI</a>
-</div>
-	</div>
-<div class = "Content">
-	<div class = "Img-Wrapper">
-	<img src = "https://lh4.googleusercontent.com/R9buxOKg3r5dLwWT_ObxRVFopK-vgyziSMPj2ixdoIIXaiWZcjV_-U-X9evwMrWjpew=w2400" class = "Start-Img">
-	</div>
+</nav>
+	<figure class = "Img-Wrapper">
+	<img src = "https://lh4.googleusercontent.com/R9buxOKg3r5dLwWT_ObxRVFopK-vgyziSMPj2ixdoIIXaiWZcjV_-U-X9evwMrWjpew=w2400" class = "Start-Img" alt = "Gym">
+	</figure>
+</header>
+<main>
 	<span class = "Img-Text">Znajdź Najlepszy plan treningowy dla siebie </span>
-		<div class = "Container">
-			<div class = "ContainerChd" style = "margin: 0 -2.84635416vw 0 0">
+		<section class = "MainContainer">
+			<section>
 				<div class = "Circle">
 					<div class = "Dumbell D1"></div>
 					<div class = "Dumbell D2"></div>
@@ -627,102 +705,125 @@
 					<div class = "Dumbell D2"></div>
 					<div class = "Dumbell D1"></div>
 				</div>
-				<span class = "AText A1">
+
+				<article class = "AText A1">
 					<h2>Plan treningowy</h2>
 					<p> Plan treningowy dopasowany do <br> 
 					twoich możliwości, możliwość <br> 
 					obejrzenia filmiku z dokładnym <br>
 					omówieniem ćwiczenia 
-				</p>
-				</span>
-		  		</div>
+					</p>
+				</article>
+		 		</section>
 				<div class = "Line"></div>
-			<div class = "ContainerChd" style = "margin: -3.71517vh -4.4661458vw 0 -4.4661458vw;">
+
+			<section>
 				<div class = "Circle C2">
 				<img src = "https://lh5.googleusercontent.com/pkLGBSAOTG6IczLrbt9S1tS4w3z2iytV4GKS2yQUj7lHbUVugcArsvI9J2yj9s6yDAI=w2400">
 				</div>
-				<span class = "AText">
+
+				<article class = "AText">
 					<h2>Dieta</h2>
 					<p>
 					Indywidualne spotkanie z dietetykiem<br>
 					i rozmowa na temat zdrowego odżywienia
 					</p>
-				</span>
-				</div>
-				<div class = "Line"></div>
-			<div class = "ContainerChd" style = "margin: -3.71517vh	 0 0 -3.4809895vw;">
+				</article>
+				</section>
+
+				<div class = "Line"></div>				
+			<section>
 				<div class = "Circle C3">
 				<img src = "https://lh5.googleusercontent.com/gjzrCm007V2zC75LYV-4--iGFE8m0nbo1IF2JipzPzMEd-iqjVkV4mEjAOZrdOUeOyo=w2400">
 				</div>
-				<span class = "AText">
+
+				<article class = "AText">
 					<h2>Efekty</h2>	
 					<p>
 					Gwarancja efektów widoczna już po <br>
 					miesiącu od zaczęcia treningów
 					</p>
-				</span>
-			</div>
-		</div>
+				</article>
+			</section>
+		</section>
+
 	<div class = "OverLine"></div>
 	<p class = "Heading">Oferta</p>
-		<div class = "Offer-Container">
-			<div class = "Row">
-				<div class = "Img-Wrapper2">
-					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/720_brbyao_img_0ca5a950a3643e0044ad10f24bd959f8.webp">
-				</div>
-				<div class = "Img-Wrapper2">
-					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/662_brbyao_img_27a92887b7b43c0291042b968aedceee.webp">
-				</div>
-			</div>
-			<div class = "Row">
-				<div class = "Img-Wrapper2" onmouseover="Picture()" onmouseout="PictureOut()">
-					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/719_brbyao_img_89369ac9f8c8d277faacaab749e62e85.webp" class = "ImageFirst">
-					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/720_brbyao_img_5cf655f871d510285eea0fc73248f5c3.webp" class = "ImageSecond hidden">
-				</div>
-				<div class = "Img-Wrapper2" onmouseover="Picture2()" onmouseout="PictureOut2()">
-					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/720_brbyao_img_9d94f1f5da6f740b2456936485347f6a.webp" class = "ImageFirst">
-					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/719_brbyao_img_4c2d5cf40c5ea9c7e304dfd6faea4b71.webp" class = "ImageSecond hidden">		
-				</div>
-			</div>
-		</div>
+
+		<section class = "Offer-Container">
+			<section class = "Row">
+
+				<figure class = "Img-Wrapper2">
+					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/720_brbyao_img_0ca5a950a3643e0044ad10f24bd959f8.webp" alt = "Man pulls up">
+				</figure>
+
+				<figure class = "Img-Wrapper2">
+					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/662_brbyao_img_27a92887b7b43c0291042b968aedceee.webp" alt = "Woman in gym outfit posing">
+				</figure>
+
+			</section>
+			<section class = "Row">	
+
+				<figure class = "Img-Wrapper2" conmouseover="Picture()" onmouseout="PictureOut()">
+					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/719_brbyao_img_89369ac9f8c8d277faacaab749e62e85.webp" class = "ImageFirst" alt = "Burger">
+					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/720_brbyao_img_5cf655f871d510285eea0fc73248f5c3.webp" class = "ImageSecond hidden" alt = "">
+				</figure>
+
+				<figure class = "Img-Wrapper2" onmouseover="Picture2()" onmouseout="PictureOut2()">
+					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/720_brbyao_img_9d94f1f5da6f740b2456936485347f6a.webp" class = "ImageFirst" alt = "coffee, weight">
+					<img src = "https://brbyao.webwave.dev/files/dynamicContent/sites/brbyao/images/.CURRENT_LIB/719_brbyao_img_4c2d5cf40c5ea9c7e304dfd6faea4b71.webp" class = "ImageSecond hidden" alt = "breakfast">		
+				</figure>
+
+			</section>
+		</section>
+
 		<div class = "OverLine"></div>
 				<p class = "Heading">Galeria</p>
 
-	<div class = "Image-Bg">
-		<div class = "Gallery-Container">
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh3.googleusercontent.com/77uoP9OxWMtm0i-LKtgsOdWa5E--0KEjp9hytIx4NFL8ggurYe9dHV9WlJX12GpL1UE=w2400">
-			</div>
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh5.googleusercontent.com/CRfomrLLu-cZNXOX24s5x2PFymbsD4f01_jDl4Yl1JL5KwpWNq_cF6xkVJu1skQp2dM=w2400" >
-			</div>
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh4.googleusercontent.com/LNZP4Q9WKSm0pvkhH4mrTlq4xWImx3p1yhA00zUY326W5nN-smJQdxSIDqx3l4WVor8=w2400">
-			</div>
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh5.googleusercontent.com/kOBWpheVmxNg8lKu1uHzv4DIyB-fWrXo5Goy02DBjtKMAXUfvbTS9w0abSPrjy8rns0=w2400">
-			</div>
-		</div>
-		<div class = "Gallery-Container">
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh6.googleusercontent.com/KbJU9cgu1cWIR5hiqr2m7xm82ssXuLqCwN2BHmLglKljeXAEEIIgk0NARTKeVfd2OVs=w2400">
-			</div>
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh3.googleusercontent.com/HG95hu0bSb5fsaYnVqIenC0Aa71Ux_6DwOyS9np6-U267W4H7ZUBbJU00dGmSTMxLZo=w2400"
-				style = "margin-left: -11.198vw;">
-			</div>
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh3.googleusercontent.com/NqQ7YgYb1Gy8W3DqBaEciAJTHaelrFS_1nzJrNCVEUxe-6C1UJgiA88yJL1GWTjYPxQ=w2400"
-				style = "margin-left: -9.115vw;">
-			</div>
-			<div class = "Img-Wrapper3">
-				<img src = "https://lh3.googleusercontent.com/4f5v2TmuiTdS9jUuoHlk99GPShu6yanqmNM05d6-vA6JWvIBWU0EqUEdwNu2UeilrAs=w2400" >
-			</div>
-		</div>
-	</div>
-</div>
+	<section class = "Image-Bg">
+		<section class = "Gallery-Container">
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh3.googleusercontent.com/77uoP9OxWMtm0i-LKtgsOdWa5E--0KEjp9hytIx4NFL8ggurYe9dHV9WlJX12GpL1UE=w2400" alt = "man stands on one hand">
+			</figure>
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh5.googleusercontent.com/CRfomrLLu-cZNXOX24s5x2PFymbsD4f01_jDl4Yl1JL5KwpWNq_cF6xkVJu1skQp2dM=w2400" alt = "Man trains hard on gym">
+			</figure>
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh4.googleusercontent.com/LNZP4Q9WKSm0pvkhH4mrTlq4xWImx3p1yhA00zUY326W5nN-smJQdxSIDqx3l4WVor8=w2400" alt = "Woman trains cardio">
+			</figure>
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh5.googleusercontent.com/kOBWpheVmxNg8lKu1uHzv4DIyB-fWrXo5Goy02DBjtKMAXUfvbTS9w0abSPrjy8rns0=w2400" alt = "Man shows abs">
+			</figure>
+
+		</section>
+		<section class = "Gallery-Container">
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh6.googleusercontent.com/KbJU9cgu1cWIR5hiqr2m7xm82ssXuLqCwN2BHmLglKljeXAEEIIgk0NARTKeVfd2OVs=w2400" alt = "Man shows his triceps">
+			</figure>
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh3.googleusercontent.com/HG95hu0bSb5fsaYnVqIenC0Aa71Ux_6DwOyS9np6-U267W4H7ZUBbJU00dGmSTMxLZo=w2400" alt = "Man trains chest on gym">
+			</figure>
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh3.googleusercontent.com/NqQ7YgYb1Gy8W3DqBaEciAJTHaelrFS_1nzJrNCVEUxe-6C1UJgiA88yJL1GWTjYPxQ=w2400" alt = "Woman trains back on gym">
+			</figure>
+
+			<figure class = "Img-Wrapper3">
+				<img src = "https://lh3.googleusercontent.com/4f5v2TmuiTdS9jUuoHlk99GPShu6yanqmNM05d6-vA6JWvIBWU0EqUEdwNu2UeilrAs=w2400" alt = "Woman do deadlift on gym">
+			</figure>
+
+		</section>
+	</section>
+</main>
 
 <script type="text/javascript">
+
 const overline = document.getElementsByClassName('OverLine');
 const StartImage = document.getElementsByClassName('Start-Img');
 const height =  document.documentElement.clientHeight;
@@ -733,42 +834,47 @@ const SecondImage = document.getElementsByClassName("ImageSecond");
 	
 
 function Sledz(){   
-if(StartImageRect.bottom <= 0)
-{
-root.style.setProperty('--Value',`${window.scrollY/(3/2)}px`);
-}
-Object.values(overline).forEach((line) =>{
-var lineRect = line.getBoundingClientRect();
-if(lineRect.bottom >= 0 && lineRect.top - height < 0)
-{
-line.classList.add('DisplayOverLine');
-}
-else
-{
-line.classList.remove('DisplayOverLine');
-}
-})     
+	if(StartImageRect.bottom <= 0)
+	{
+		root.style.setProperty('--Value',`${window.scrollY/(3/2)}px`);
+	}
+	Object.values(overline).forEach((line) =>{
+		var lineRect = line.getBoundingClientRect();
+		if(lineRect.bottom >= 0 && lineRect.top - height < 0)
+		{
+			line.classList.add('DisplayOverLine');
+		}
+		else
+		{
+			line.classList.remove('DisplayOverLine');
+		}
+	})     
 }	
+
 function Picture()
 {
-FirstImage[0].classList.add('hidden');
-SecondImage[0].classList.remove('hidden');
+	FirstImage[0].classList.add('hidden');
+	SecondImage[0].classList.remove('hidden');
 }
+
 function PictureOut()
 {
-FirstImage[0].classList.remove('hidden');
-SecondImage[0].classList.add('hidden');
+	FirstImage[0].classList.remove('hidden');
+	SecondImage[0].classList.add('hidden');
 }
+
 function Picture2()
 {
-FirstImage[1].classList.add('hidden');
-SecondImage[1].classList.remove('hidden');
+	FirstImage[1].classList.add('hidden');
+	SecondImage[1].classList.remove('hidden');
 }
+
 function PictureOut2()
 {
-FirstImage[1].classList.remove('hidden');
-SecondImage[1].classList.add('hidden');
+	FirstImage[1].classList.remove('hidden');
+	SecondImage[1].classList.add('hidden');
 }
+
 </script>
 </body>
 </html>
