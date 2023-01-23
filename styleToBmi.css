@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background-color: azure;
+	font-size: 0.938vw;
+    text-align: center;
+}   
+
+header {
+    width: 100vw;
+    max-width: 100%;
+}
+
+nav {
+    justify-content: center;
+	width: 100vw;
+	max-width:100%;
+	height: 4.334vh;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	background-color: black;
+}
+
+nav a {
+	text-decoration: none;
+	color:#b3b0ca;
+	padding: 0 1.563vw;
+}
+
+nav a:hover {
+	color: #b3b0ca;
+}
+
+.BMIheader {
+    font-family: "Gill Sans", sans-serif;
+    color: #3b3939;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.userInfo {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 26px;
+    margin-left: 1cm;
+    margin-top: 20px;
+}
+
+.age {
+    display: inline;
+    margin-right: 82px;
+}
+
+.weight {
+    display: inline;
+    margin-right: 75px;
+}
+
+.height {
+    display: inline;
+}
+
+.textHole {
+    border-style: solid;
+    font-size: 20px;
+    border-width: 1px;
+    background-color: whitesmoke;
+    margin-left: 5px;
+}
+
+.userInfo div {
+    padding: 7px;
+}
+
+.bmiCheck {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.bmiButton {
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.calculator {
+    background-image: url('bmi.png');
+    background-repeat: no-repeat;
+    padding: 49px;
+    background-size: 100%;
+    margin-top: 30px;
+}
