@@ -1,0 +1,104 @@
+body {
+    background-color: azure;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    justify-content: center;
+	width: 100vw;
+	max-width:100%;
+	height: 4.334vh;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	background-color: black;
+}
+
+nav a {
+	text-decoration: none;
+	color:#b3b0ca;
+	padding: 0 1.563vw;
+}
+
+nav a:hover {
+	color: #b3b0ca;
+}
+
+.banner {
+    margin: 0%;
+    border-style: solid;
+    border-color: rgba(156, 37, 87, 0.741);
+    border-width: 35px;
+    border-left: 0;
+    border-right: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.koperta1 {
+    width: 33%;
+    margin-left: 5.5cm;
+}
+
+.koperta2 {
+    width: 33%;
+    margin-right: 5.5cm;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+.balon1 {
+    width: 33%;
+    margin-left: 6cm;
+    margin-top: 2cm;
+}
+
+.balon2 {
+    width: 33%;
+    margin-right: 6cm;
+    margin-top: 2cm;
+}
+
+.autorzy {
+    width: 33%;
+}
+
+.autorzy span {
+    font-style: italic;
+}
+
+footer {
+    border-style: solid;
+    border-color: rgba(156, 37, 87, 0.741);
+    border-width: 35px;
+    border-left: 0;
+    border-right: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pad1 {
+    width: 33%;
+    margin-left: 6.5cm;
+}
+
+.pad2 {
+    width: 33%;
+    margin-right: 6.5cm;
+}
+
+footer p {
+    width: 33%;
+}
