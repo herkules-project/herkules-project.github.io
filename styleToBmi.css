@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	box-sizing: border-box;
-	background-color: azure;
+	background-color: rgb(242, 236, 236);
 	font-size: 0.938vw;
     text-align: center;
 }   
@@ -17,7 +17,7 @@ nav {
 	max-width:100%;
 	height: 4.334vh;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: reverse;
 	align-items: center;
 	background-color: black;
 }
@@ -34,14 +34,14 @@ nav a:hover {
 
 .BMIheader {
     font-family: "Gill Sans", sans-serif;
-    color: #3b3939;
+    color: rgb(215, 161, 161);
     text-align: center;
     font-size: 36px;
     font-weight: 900;
     margin-top: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(227, 210, 210);
+    border-bottom-width: 1px;
 }
 
 .userInfo {
@@ -66,11 +66,9 @@ nav a:hover {
 }
 
 .textHole {
-    border-style: solid;
-    font-size: 20px;
-    border-width: 1px;
-    background-color: whitesmoke;
-    margin-left: 5px;
+    height: 25px;
+	border-radius: 8px;
+	border-color: rgb(214, 196, 196);
 }
 
 .userInfo div {
@@ -84,19 +82,60 @@ nav a:hover {
     font-family: "Gill Sans", sans-serif;
 }
 
-.bmiButton {
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 10px;
-    border-width: 1px;
+button {
+	align-items: center;
+	appearance: none;
+	background-color: #fff;
+	border-radius: 24px;
+	border-style: none;
+	box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+	box-sizing: border-box;
+	color: #3c4043;
+	cursor: pointer;
+	display: inline-flex;
+	fill: currentcolor;
+	font-family: "Google Sans",Roboto,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	height: 48px;
+	justify-content: center;
+	letter-spacing: .25px;
+	line-height: normal;
+	max-width: 100%;
+	overflow: visible;
+	padding: 2px 24px;
+	position: relative;
+	text-align: center;
+	text-transform: none;
+	transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: auto;
+	will-change: transform,opacity;
+	z-index: 0;
+}
+
+button:hover {
+	background: whitesmoke;
+  	color: rgb(214, 196, 196);
+}
+
+button:active {
+	box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  	outline: none;
+}
+
+button:focus {
+	outline: none;
+	border: 2px solid rgb(214, 196, 196);
 }
 
 .calculator {
     background-image: url('bmi_photo.png');
     background-repeat: no-repeat;
-    padding: 49px;
+    padding: 107px;
     background-size: 100%;
-    margin-top: 30px;
 }
 
 .result {
@@ -104,4 +143,7 @@ nav a:hover {
     height: 0.8cm;
     width: 7cm;
     margin-left: 40%;
+    border-radius: 8px;
+	border-color: rgb(214, 196, 196);
+    border-width: 10px;
 }
