@@ -134,8 +134,8 @@ button:focus {
 .calculator {
     background-image: url('bmi_photo.png');
     background-repeat: no-repeat;
-    padding: 107px;
     background-size: 100%;
+	height: 546px;
 }
 
 .result {
