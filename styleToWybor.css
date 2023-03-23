@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    background-color: white;
+    font-family: Arial Black;
+}
+
+main {
+    display: flex;
+    flex-direction: reverse;
+}
+
+.man {
+    width: 50%;
+}
+
+.woman {
+    width: 50%;
+}
+
+button {
+    background-color: white;
+    border-color: rgb(226, 219, 219);
+    border-radius: 14%;
+    height: 10cm;
+    width: 10cm;
+}
+
+button:hover
+{
+    filter: brightness(95%);
+}
+
+.womanButton:hover
+{
+    animation: fadePink 0.25s ease;
+	animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.manButton:hover {
+    animation: fadeBlue 0.25s ease;
+	animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes fadePink
+{
+	from{
+	}
+	to
+	{
+		box-shadow: 0.417vw 0.413vh 10px 0px rgba(184, 0, 237, 1);
+	}
+}
+
+@keyframes fadeBlue
+{
+	from{
+
+	}
+	to
+	{
+		box-shadow: 0.417vw 0.413vh 10px 0px rgba(0, 77, 235, 1);
+	}
+}
