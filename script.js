@@ -3,8 +3,26 @@ function BMI()
     let BMI, weight, height, age;
     let message;
     weight = parseInt(document.querySelector("#weight").value);
+    if (weight > 700)
+    {
+        document.getElementById("result").innerHTML = "Podałeś złą wartość";
+        document.getElementById("appropriateBMI").innerHTML = "";
+        return 0;
+    }
     height = parseInt(document.querySelector("#height").value);
+    if (height > 300)
+    {
+        document.getElementById("result").innerHTML = "Podałeś złą wartość";
+        document.getElementById("appropriateBMI").innerHTML= "";
+        return 0;
+    }
     age = parseInt(document.querySelector("#age").value);
+    if (age > 150)
+    {
+        document.getElementById("result").innerHTML = "Podałeś złą wartość";
+        document.getElementById("appropriateBMI").innerHTML = "";
+        return 0;
+    }
     BMI = ((weight) / (height * height) * 10000).toFixed(1);
     checkInfo();
 
@@ -34,10 +52,9 @@ function BMI()
             beetween45and54();
         else if (age >= 55 && age <= 64)
             beetween55and64();
-        else if (age > 64)
+        else if (age > 64 && age <= 150)
             above64();
     }
-
     function under18()
     {
         if(BMI < 18)
