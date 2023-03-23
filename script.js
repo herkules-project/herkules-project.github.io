@@ -3,21 +3,21 @@ function BMI()
     let BMI, weight, height, age;
     let message;
     weight = parseInt(document.querySelector("#weight").value);
-    if (weight > 700)
+    if (weight > 700 || weight < 1)
     {
         document.getElementById("result").innerHTML = "Podałeś złą wartość";
         document.getElementById("appropriateBMI").innerHTML = "";
         return 0;
     }
     height = parseInt(document.querySelector("#height").value);
-    if (height > 300)
+    if (height > 300 || height < 1)
     {
         document.getElementById("result").innerHTML = "Podałeś złą wartość";
         document.getElementById("appropriateBMI").innerHTML= "";
         return 0;
     }
     age = parseInt(document.querySelector("#age").value);
-    if (age > 150)
+    if (age > 150 || age < 1)
     {
         document.getElementById("result").innerHTML = "Podałeś złą wartość";
         document.getElementById("appropriateBMI").innerHTML = "";
